@@ -12,8 +12,9 @@ namespace DSAlgo
             //MissingNumbers solution = new MissingNumbers();            
             //MostCommonWordAlgo solution = new MostCommonWordAlgo();
             //FirstNonRepeatingCharacter solution = new FirstNonRepeatingCharacter();
-            //SingleNumber solution = new SingleNumber();
-            PowerOfTwo solution = new PowerOfTwo();
+            //SingleNumber solution = new SingleNumber();            
+            //PowerOfTwo solution = new PowerOfTwo();
+            WaterContainer solution = new WaterContainer();
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
