@@ -16,7 +16,8 @@ namespace DSAlgo
             //PowerOfTwo solution = new PowerOfTwo();
             //WaterContainer solution = new WaterContainer();
             //BinaryArraySearch solution = new BinaryArraySearch();
-            BinarySearchTree solution = new BinarySearchTree();
+            //BinarySearchTree solution = new BinarySearchTree();
+            GroupedAnangrams solution = new GroupedAnangrams();
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
