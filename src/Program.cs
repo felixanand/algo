@@ -14,7 +14,9 @@ namespace DSAlgo
             //FirstNonRepeatingCharacter solution = new FirstNonRepeatingCharacter();
             //SingleNumber solution = new SingleNumber();            
             //PowerOfTwo solution = new PowerOfTwo();
-            WaterContainer solution = new WaterContainer();
+            //WaterContainer solution = new WaterContainer();
+            //BinaryArraySearch solution = new BinaryArraySearch();
+            BinarySearchTree solution = new BinarySearchTree();
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
