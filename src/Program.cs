@@ -19,7 +19,8 @@ namespace DSAlgo
             //BinarySearchTree solution = new BinarySearchTree();
             //GroupedAnangrams solution = new GroupedAnangrams();
             //TwoSumProblem solution = new TwoSumProblem();
-            KthMissing solution = new KthMissing();
+            //KthMissing solution = new KthMissing();
+            IntSlidingWindow solution = new IntSlidingWindow();            
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
