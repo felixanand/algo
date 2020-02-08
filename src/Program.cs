@@ -21,7 +21,8 @@ namespace DSAlgo
             //TwoSumProblem solution = new TwoSumProblem();
             //KthMissing solution = new KthMissing();
             //IntSlidingWindow solution = new IntSlidingWindow();   
-            FirstDuplicate solution = new FirstDuplicate();         
+            //FirstDuplicate solution = new FirstDuplicate();  
+            IslandProblem solution = new IslandProblem();       
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
