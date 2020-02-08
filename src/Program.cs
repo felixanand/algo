@@ -20,7 +20,8 @@ namespace DSAlgo
             //GroupedAnangrams solution = new GroupedAnangrams();
             //TwoSumProblem solution = new TwoSumProblem();
             //KthMissing solution = new KthMissing();
-            IntSlidingWindow solution = new IntSlidingWindow();            
+            //IntSlidingWindow solution = new IntSlidingWindow();   
+            FirstDuplicate solution = new FirstDuplicate();         
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
