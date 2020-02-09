@@ -22,7 +22,8 @@ namespace DSAlgo
             //KthMissing solution = new KthMissing();
             //IntSlidingWindow solution = new IntSlidingWindow();   
             //FirstDuplicate solution = new FirstDuplicate();  
-            IslandProblem solution = new IslandProblem();       
+            //IslandProblem solution = new IslandProblem();  
+            RottingOranges solution = new RottingOranges();
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
