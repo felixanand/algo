@@ -1,7 +1,7 @@
 //https://leetcode.com/discuss/interview-question/411357/
 
 //Given a 2D grid, each cell is either a zombie 1 or a human 0. Zombies can turn adjacent (up/down/left/right) 
-//human beings into zombies every hour. Find out how many hours does it take to infect all humans?
+//human beings into zombies every hour. Find out how many hours does it take to infect all remainingHumans?
 
 namespace Amazon
 {
@@ -24,12 +24,12 @@ namespace Amazon
 
         // Queue to hold all Zombie Coordinates
         Queue<int[]> q = new Queue<int[]>();
-        // Humans
-        int humans = 0;
+        // remainingHumans
+        int remainingHumans = 0;
         // Minutes taken to Rotten
         int minutesTaken = 0;
 
-        // Get Minutes taken to Rotten entire orange set
+        // Get Minutes taken to turn zombies to human
         public int GetMinMinutes(int[][] grid)
         {
             for (int i = 0; i < grid.Length; i++)
@@ -39,16 +39,16 @@ namespace Amazon
                     if (grid[i][j] == 1)
                         q.Enqueue(new int[] { i, j });
                     else if (grid[i][j] == 0)
-                        humans++;
+                        remainingHumans++;
                 }
             }
 
-            while (humans > 0)
+            while (remainingHumans > 0)
             {
                 var size = q.Count;
                 minutesTaken++;
 
-                if (size == 0 && humans > 0)
+                if (size == 0 && remainingHumans > 0)
                     return -1;
 
                 while (size > 0)
@@ -74,7 +74,7 @@ namespace Amazon
             if (grid[x][y] == 0)
             {
                 grid[x][y] = 1;
-                humans--;
+                remainingHumans--;
                 q.Enqueue(new int[] { x, y });
             }
 
