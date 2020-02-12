@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
+using MSFT;
+using Amazon;
 
 namespace DSAlgo
 {
@@ -24,7 +26,16 @@ namespace DSAlgo
             //FirstDuplicate solution = new FirstDuplicate();  
             //IslandProblem solution = new IslandProblem();  
             //RottingOranges solution = new RottingOranges();
-            KthDay solution = new KthDay();
+            //MaxLenConcString solution = new MaxLenConcString();
+            //KthDay solution = new KthDay();
+
+
+            // Amazon Problems
+            // ---------------
+            //MostRepeatingWords solution = new MostRepeatingWords();
+            Zombie solution = new Zombie();
+
+
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
