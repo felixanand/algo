@@ -35,7 +35,8 @@ namespace DSAlgo
             //MostRepeatingWords solution = new MostRepeatingWords();
             //Zombie solution = new Zombie();
 
-            RotateImage solution = new RotateImage();
+            //RotateImage solution = new RotateImage();
+            ThirdMaxProblem solution = new ThirdMaxProblem();
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
