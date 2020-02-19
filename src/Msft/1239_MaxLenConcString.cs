@@ -13,26 +13,33 @@ namespace MSFT
         public void Run()
         {
             Console.WriteLine("Maximum Length of Concatenated String :");
-            string[] input = new string[] { "un", "iq", "ue" };
-            Console.WriteLine("Max length of possible concatented string: {0}", GetMaxLength(input));
+            string[] input = new string[] { "cha","r","act","ers" };
+            Console.WriteLine("Max length of possible concatented string: {0}", MaxLength(input));
         }
 
-        private int GetMaxLength(IList<string> arr)
+        private int MaxLength(IList<string> arr)
         {
-            int totalLength = 0;
-            if (arr.Count() < 2)
+            int maxLength = 0;
+            DFS(arr, ref maxLength, 0, "");
+            return maxLength;
+        }
+
+        private void DFS(IList<string> arr, ref int maxLength, int startIndex, string newString)
+        {
+            if (!isUniqueWord(newString)) return;
+
+            maxLength = maxLength > newString.Length ? maxLength : newString.Length;
+
+            for(int i=startIndex; i<arr.Count; i++)
             {
-                return (arr.Count() == 1) ? arr[0].Length : 0;
+                DFS(arr, ref maxLength, i+1, newString + arr[i]);
             }
-            Dictionary<string, int> dataHolder = new Dictionary<string, int>();
-            foreach (string item in arr)
-            {
-                dataHolder.Add(item, item.Length);
-            }
-            totalLength = dataHolder.Values.Max();
-            dataHolder.Remove(dataHolder.FirstOrDefault(x => x.Value == dataHolder.Values.Max()).Key);
-            totalLength += dataHolder.Values.Max();
-            return totalLength;
+        }
+
+        private bool isUniqueWord(string input)
+        {
+            HashSet<char> data = new HashSet<char>(input);
+            return (data.Count() == input.Length);
         }
     }
 }

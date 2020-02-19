@@ -26,7 +26,7 @@ namespace DSAlgo
             //FirstDuplicate solution = new FirstDuplicate();  
             //IslandProblem solution = new IslandProblem();  
             //RottingOranges solution = new RottingOranges();
-            //MaxLenConcString solution = new MaxLenConcString();
+            MaxLenConcString solution = new MaxLenConcString();
             //KthDay solution = new KthDay();
 
 
@@ -36,7 +36,7 @@ namespace DSAlgo
             //Zombie solution = new Zombie();
 
             //RotateImage solution = new RotateImage();
-            ThirdMaxProblem solution = new ThirdMaxProblem();
+            //ThirdMaxProblem solution = new ThirdMaxProblem();
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
