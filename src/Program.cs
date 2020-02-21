@@ -26,10 +26,16 @@ namespace DSAlgo
             //FirstDuplicate solution = new FirstDuplicate();  
             //IslandProblem solution = new IslandProblem();  
             //RottingOranges solution = new RottingOranges();
-            MaxLenConcString solution = new MaxLenConcString();
+            //MaxLenConcString solution = new MaxLenConcString();
             //KthDay solution = new KthDay();
+            //ReverseString solution = new ReverseString();
+            //ReverseLinkedList solution = new ReverseLinkedList();
+            //IntersectionLinkedList solution = new IntersectionLinkedList(); //Not Wokring
 
+            // Microsoft Problems
+            // ------------------
 
+            ValidPalindrome_LC125 solution = new ValidPalindrome_LC125();
             // Amazon Problems
             // ---------------
             //MostRepeatingWords solution = new MostRepeatingWords();
