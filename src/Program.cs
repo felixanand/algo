@@ -35,7 +35,8 @@ namespace DSAlgo
             // Microsoft Problems
             // ------------------
 
-            ValidPalindrome_LC125 solution = new ValidPalindrome_LC125();
+            //ValidPalindrome_LC125 solution = new ValidPalindrome_LC125();
+            LinkedListCycle_141 solution = new LinkedListCycle_141();
             // Amazon Problems
             // ---------------
             //MostRepeatingWords solution = new MostRepeatingWords();
