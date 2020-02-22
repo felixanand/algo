@@ -42,7 +42,7 @@ public class LinkedListCycle_141
         while (slow != null && fast != null)
         {
             // If no next element, no cycles exsist
-            if (slow.next == null)
+            if (slow.next == null || fast.next == null)
             return false;
 
             slow = slow.next;

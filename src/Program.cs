@@ -36,7 +36,9 @@ namespace DSAlgo
             // ------------------
 
             //ValidPalindrome_LC125 solution = new ValidPalindrome_LC125();
-            LinkedListCycle_141 solution = new LinkedListCycle_141();
+            //LinkedListCycle_141 solution = new LinkedListCycle_141();
+            //PhoneNumbers_17 solution = new PhoneNumbers_17();
+            SortColors_75 solution = new SortColors_75();
             // Amazon Problems
             // ---------------
             //MostRepeatingWords solution = new MostRepeatingWords();
