@@ -42,10 +42,13 @@ namespace DSAlgo
             //ReverseString_334 solution = new ReverseString_334();
             //ReverseString2_186 solution = new ReverseString2_186(); 
             //MostRepeatingWords solution = new MostRepeatingWords();
-            Zombie solution = new Zombie();
+            //Zombie solution = new Zombie();
             //RotateImage solution = new RotateImage();
-            //ThirdMaxProblem solution = new ThirdMaxProblem();
+            //ThirdMaxProblem solution = new ThirdMaxProblem();            
 
+            //Add2NumberLinkedList solution = new Add2NumberLinkedList();
+            Merge2SortedLists solution = new Merge2SortedLists();
+            
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
