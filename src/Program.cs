@@ -11,6 +11,7 @@ namespace DSAlgo
         {
             Stopwatch sw = new Stopwatch();
             sw.Start();
+
             //MissingNumbers solution = new MissingNumbers();            
             //MostCommonWordAlgo solution = new MostCommonWordAlgo();
             //FirstNonRepeatingCharacter solution = new FirstNonRepeatingCharacter();
@@ -30,22 +31,21 @@ namespace DSAlgo
             //KthDay solution = new KthDay();
             //ReverseString solution = new ReverseString();
             //ReverseLinkedList solution = new ReverseLinkedList();
-            //IntersectionLinkedList solution = new IntersectionLinkedList(); //Not Wokring
-
-            // Microsoft Problems
-            // ------------------
-
+            //IntersectionLinkedList solution = new IntersectionLinkedList(); //Not Wokring            
             //ValidPalindrome_LC125 solution = new ValidPalindrome_LC125();
             //LinkedListCycle_141 solution = new LinkedListCycle_141();
             //PhoneNumbers_17 solution = new PhoneNumbers_17();
-            SortColors_75 solution = new SortColors_75();
-            // Amazon Problems
-            // ---------------
+            //SortColors_75 solution = new SortColors_75();
+            //StringToIntATOI_8 solution = new StringToIntATOI_8();
+            //ValidParanthesis_20 solution = new ValidParanthesis_20();
+            //LongestPalindromeSubstring_5 solution = new LongestPalindromeSubstring_5();
+            //ReverseString_334 solution = new ReverseString_334();
+            //ReverseString2_186 solution = new ReverseString2_186(); 
             //MostRepeatingWords solution = new MostRepeatingWords();
-            //Zombie solution = new Zombie();
-
+            Zombie solution = new Zombie();
             //RotateImage solution = new RotateImage();
             //ThirdMaxProblem solution = new ThirdMaxProblem();
+
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
