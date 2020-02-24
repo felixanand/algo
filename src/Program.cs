@@ -48,8 +48,10 @@ namespace DSAlgo
 
             //Add2NumberLinkedList solution = new Add2NumberLinkedList();
             //Merge2SortedLists solution = new Merge2SortedLists();
-            SpiralMatrix solution = new SpiralMatrix();
+            //SpiralMatrix solution = new SpiralMatrix();
             //MinRotatedSortedArray solution = new MinRotatedSortedArray();
+            //BinaryTreeInOrderTraversal solution = new BinaryTreeInOrderTraversal();
+            BinaryTreeLevelOrderTraversal solution = new BinaryTreeLevelOrderTraversal();
             solution.Run();
             sw.Stop();
             Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);

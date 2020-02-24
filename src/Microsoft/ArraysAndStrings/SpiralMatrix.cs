@@ -19,6 +19,7 @@ public class SpiralMatrix
     private IList<int> GetResult(int[][] matrix)
     {
         IList<int> res = new List<int>();
+        if (matrix.Length == 0) return res;
         int top = 0;
         int left = 0;
         int bottom = matrix.Length - 1;
