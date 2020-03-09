@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
-using MSFT;
-using Amazon;
+using System.Reflection;
 
 namespace DSAlgo
 {
@@ -9,9 +8,33 @@ namespace DSAlgo
     {
         static void Main(string[] args)
         {
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
+            Stopwatch performanceMenasurement = new Stopwatch();
+            performanceMenasurement.Start();
 
+            DoAmazonProblems();
+            DoMicrosoftProblems();
+            DoOracleProblems();
+            
+            //ClassInitializer("BinaryTreeFromTraversal");
+            
+            performanceMenasurement.Stop();
+            Console.WriteLine("Time Taken = {0}ms", performanceMenasurement.ElapsedMilliseconds);
+        }
+
+        public static void DoMicrosoftProblems()
+        {
+            //Add2NumberLinkedList solution = new Add2NumberLinkedList();
+            //Merge2SortedLists solution = new Merge2SortedLists();
+            //SpiralMatrix solution = new SpiralMatrix();
+            //MinRotatedSortedArray solution = new MinRotatedSortedArray();
+            //BinaryTreeInOrderTraversal solution = new BinaryTreeInOrderTraversal();
+            //BinaryTreeLevelOrderTraversal solution = new BinaryTreeLevelOrderTraversal();
+            //solution.Run();
+        }
+
+
+        public static void DoAmazonProblems()
+        {
             //MissingNumbers solution = new MissingNumbers();            
             //MostCommonWordAlgo solution = new MostCommonWordAlgo();
             //FirstNonRepeatingCharacter solution = new FirstNonRepeatingCharacter();
@@ -44,17 +67,24 @@ namespace DSAlgo
             //MostRepeatingWords solution = new MostRepeatingWords();
             //Zombie solution = new Zombie();
             //RotateImage solution = new RotateImage();
-            //ThirdMaxProblem solution = new ThirdMaxProblem();            
+            //ThirdMaxProblem solution = new ThirdMaxProblem();     
+            //solution.Run();
+        }
 
-            //Add2NumberLinkedList solution = new Add2NumberLinkedList();
-            //Merge2SortedLists solution = new Merge2SortedLists();
-            //SpiralMatrix solution = new SpiralMatrix();
-            //MinRotatedSortedArray solution = new MinRotatedSortedArray();
-            //BinaryTreeInOrderTraversal solution = new BinaryTreeInOrderTraversal();
-            BinaryTreeLevelOrderTraversal solution = new BinaryTreeLevelOrderTraversal();
+        public static void DoOracleProblems()
+        {
+            BinaryTreeFromTraversal solution = new BinaryTreeFromTraversal();
             solution.Run();
-            sw.Stop();
-            Console.WriteLine("Elapsed Time = {0}ms", sw.ElapsedMilliseconds);
+        }
+
+    
+        public static void ClassInitializer(string className)
+        {
+            Type t = Type.GetType(className);
+            var instance = Activator.CreateInstance(t);
+            MethodInfo methodInfo = t.GetMethod("Run");
+            methodInfo.Invoke(instance, null);
         }
     }
+
 }

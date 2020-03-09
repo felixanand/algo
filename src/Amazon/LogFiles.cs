@@ -23,24 +23,20 @@
 // 3 <= logs[i].length <= 100
 // logs[i] is guaranteed to have an identifier, and a word after the identifier.
 
-namespace Amazon
+using System;
+
+public class LogFiles
 {
-    using System;
-
-    public class LogFiles
+    public void Run()
     {
-        public void Run()
-        {
-            string[] logs = { "dig1 8 1 5 1", "let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero" };
-            string[] result = ReorderLogFiles(logs);
-        }
-
-        private string[] ReorderLogFiles(string[] logs)
-        {
-            string[] result = {};
-            
-            return result;
-        }
+        string[] logs = { "dig1 8 1 5 1", "let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero" };
+        string[] result = ReorderLogFiles(logs);
     }
 
+    private string[] ReorderLogFiles(string[] logs)
+    {
+        string[] result = { };
+
+        return result;
+    }
 }
