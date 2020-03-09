@@ -77,8 +77,6 @@ namespace Amazon
                 remainingHumans--;
                 q.Enqueue(new int[] { x, y });
             }
-
-
         }
     }
 }
