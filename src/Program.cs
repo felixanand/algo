@@ -73,11 +73,13 @@ namespace DSAlgo
 
         public static void DoOracleProblems()
         {
-            BinaryTreeFromTraversal solution = new BinaryTreeFromTraversal();
+            //BinaryTreeFromTraversal solution = new BinaryTreeFromTraversal();
+            //ParenthesisCreate solution = new ParenthesisCreate();
+            LeastBricksProblem solution = new LeastBricksProblem();
             solution.Run();
         }
 
-    
+
         public static void ClassInitializer(string className)
         {
             Type t = Type.GetType(className);
