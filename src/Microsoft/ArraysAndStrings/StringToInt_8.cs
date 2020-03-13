@@ -59,54 +59,30 @@ public class StringToIntATOI_8
 
     private int MyAtoi(string str)
     {
-        if (String.IsNullOrEmpty(str.Trim())) return 0;
-        double convertedlong = 0;
-        int sign = 1;
-        int startIndex = 0;
-
-        // Remove all empty strings
-        str = str.Replace(" ", string.Empty);
-        str = (str.IndexOf(".") > 0) ? (str.Substring(0, str.IndexOf("."))) : str;
-
-        // Check if the first letter is a character
-        if (str.Length > 1)
+        long res = 0;
+        var sign = 1;
+        str = str.Trim();
+        if (string.IsNullOrEmpty(str)) return 0;
+        int index = 0;
+        if (str[index] == '+' || str[index] == '-')
         {
-            string firstCharacter = str.Substring(0, 1);
-            if (firstCharacter == "+" || firstCharacter == "-") startIndex++;
-            if (!int.TryParse(str.Substring(startIndex, 1), out int n)) return 0;
+            sign = str[index] == '+' ? 1 : -1;
+            index++;
         }
-        else if (str.Length == 1)
+        while (index < str.Length)
         {
-            if (!int.TryParse(str.Substring(startIndex, 1), out int n)) return 0;
+            if (char.IsNumber(str[index]))
+            {
+                res = res * 10 + str[index] - '0';
+                if (res * sign > int.MaxValue) return int.MaxValue;
+                if (res * sign < int.MinValue) return int.MinValue;
+            }
+            else
+            {
+                break;
+            }
+            index++;
         }
-
-        // Remove all the words after the interger
-        //Regex regEx = new Regex("[^0-9+-]");
-        //char[] cStr = regEx.Replace(str, "").ToCharArray();
-        char[] cStr = str.ToCharArray();
-        if (cStr[0] == '-') sign = -1;
-
-        int counter=0; // To keep track of position of the digit in accordacne with the loop count
-        for (int i = startIndex; i <= cStr.Length - 1; i++)
-        {
-            if (Char.IsWhiteSpace(cStr[i]) || Char.IsLetter(cStr[i])) break;
-            convertedlong += ((double)cStr[i] - (double)'0') * (double)Math.Pow(10, (cStr.Length - (++counter) - startIndex));
-        }
-
-        if (cStr.Length - 1 - counter > -1)
-        {
-            convertedlong = convertedlong / Math.Pow(10, cStr.Length -1 - counter);
-        }
-
-        if (sign == 1)
-        {
-            return (convertedlong > int.MaxValue ? int.MaxValue : (int)convertedlong);
-        }
-        else
-        {
-            return (sign * convertedlong < int.MinValue ? int.MinValue : sign * (int)convertedlong);
-        }
-
-
+        return (int)res * sign;
     }
 }

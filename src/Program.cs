@@ -76,7 +76,8 @@ namespace DSAlgo
             //BinaryTreeFromTraversal solution = new BinaryTreeFromTraversal();
             //ParenthesisCreate solution = new ParenthesisCreate();
             //LeastBricksProblem solution = new LeastBricksProblem();
-            KthSortedList solution = new KthSortedList();
+            //KthSortedList solution = new KthSortedList();
+            MedianOfSortedArray solution = new MedianOfSortedArray();
             solution.Run();
         }
 
