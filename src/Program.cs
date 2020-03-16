@@ -29,7 +29,8 @@ namespace DSAlgo
             //MinRotatedSortedArray solution = new MinRotatedSortedArray();
             //BinaryTreeInOrderTraversal solution = new BinaryTreeInOrderTraversal();
             //BinaryTreeLevelOrderTraversal solution = new BinaryTreeLevelOrderTraversal();
-            //solution.Run();
+            SetMatrixZero solution = new SetMatrixZero();
+            solution.Run();
         }
 
 
@@ -77,8 +78,8 @@ namespace DSAlgo
             //ParenthesisCreate solution = new ParenthesisCreate();
             //LeastBricksProblem solution = new LeastBricksProblem();
             //KthSortedList solution = new KthSortedList();
-            MedianOfSortedArray solution = new MedianOfSortedArray();
-            solution.Run();
+            //MedianOfSortedArray solution = new MedianOfSortedArray();
+            //solution.Run();
         }
 
 
