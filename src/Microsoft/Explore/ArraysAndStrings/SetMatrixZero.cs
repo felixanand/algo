@@ -27,12 +27,12 @@ public class SetMatrixZero
     public void Run()
     {
         int[][] inputData = new int[][] { new int[] { 1, 1, 1 }, new int[] { 1, 0, 1 }, new int[] { 1, 1, 1 } };
-        int[][] outputData = SetZeroes(inputData);
+        SetZeroes(inputData);
 
-        Arrays.Print2DArrayData(outputData);
+        Arrays.Print2DArrayData(inputData);
     }
 
-    private int[][] SetZeroes(int[][] matrix)
+    private void SetZeroes(int[][] matrix)
     {
         HashSet<int> iSet = new HashSet<int>();
         HashSet<int> jSet = new HashSet<int>();
@@ -59,7 +59,5 @@ public class SetMatrixZero
                 }
             }
         }
-
-        return matrix;
     }
 }
