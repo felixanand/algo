@@ -13,29 +13,29 @@
 // ]
 // Output: 1->1->2->3->4->4->5->6
 
-using DSAlgo.Helper.LList;
-using System;
 using System.Collections.Generic;
+using DSAlgo.Helper.LList;
 using System.Linq;
 
-public class KthSortedList
+public class MergeKSortedListLL
 {
     public void Run()
     {
-        ListNode[] inputListNode = new ListNode[3];
-        ListNode node1 = new ListNode(1);
-        node1.next = new ListNode(4);
-        node1.next.next = new ListNode(5);
-        ListNode node2 = new ListNode(1);
-        node2.next = new ListNode(3);
-        node2.next.next = new ListNode(4);
-        ListNode node3 = new ListNode(2);
-        node3.next = new ListNode(6);
-        inputListNode[0] = node1;
-        inputListNode[1] = node2;
-        inputListNode[2] = node3;
-        ListNode finalData = MergeKLists(inputListNode);
-        LLHelper.PrintList(finalData);
+        ListNode l1 = new ListNode(1);
+        l1.next = new ListNode(4);
+        l1.next.next = new ListNode(5);
+
+        ListNode l2 = new ListNode(1);
+        l2.next = new ListNode(3);
+        l2.next.next = new ListNode(4);
+
+        ListNode l3 = new ListNode(2);
+        l3.next = new ListNode(6);
+
+        ListNode[] input = new ListNode[] { l1, l2, l3 };
+
+        ListNode finalList = MergeKLists(input);
+        //LLHelper.PrintList(finalList);
 
     }
 
@@ -45,7 +45,7 @@ public class KthSortedList
 
         public void Add(int val, ListNode node)
         {
-            if (!map.ContainsKey(val))
+            if(!map.ContainsKey(val))
             {
                 map.Add(val, new Queue<ListNode>());
             }
@@ -64,15 +64,15 @@ public class KthSortedList
             return node;
         }
     }
-
-    public ListNode MergeKLists(ListNode[] lists)
+    
+    public ListNode MergeKLists(ListNode[] lists) 
     {
         MinHeap heap = new MinHeap();
         foreach (var node in lists)
         {
-            if (node == null)
+            if(node == null)
                 continue;
-
+            
             heap.Add(node.val, node);
         }
 

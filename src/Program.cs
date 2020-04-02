@@ -29,7 +29,10 @@ namespace DSAlgo
             //MinRotatedSortedArray solution = new MinRotatedSortedArray();
             //BinaryTreeInOrderTraversal solution = new BinaryTreeInOrderTraversal();
             //BinaryTreeLevelOrderTraversal solution = new BinaryTreeLevelOrderTraversal();
-            SetMatrixZero solution = new SetMatrixZero();
+            //SetMatrixZero solution = new SetMatrixZero();
+            //AddTwoNumbers2 solution = new AddTwoNumbers2();
+            //ValidBST solution = new ValidBST();
+            MaxLengthOfNonRCChar solution = new MaxLengthOfNonRCChar();
             solution.Run();
         }
 
