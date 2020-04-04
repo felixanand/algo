@@ -11,10 +11,10 @@ namespace DSAlgo
             Stopwatch performanceMenasurement = new Stopwatch();
             performanceMenasurement.Start();
 
-            DoAmazonProblems();
+            //DoAmazonProblems();
             DoMicrosoftProblems();
-            DoOracleProblems();
-            
+            //DoOracleProblems();
+            //LinkedListSingleImpl.Run();
             //ClassInitializer("BinaryTreeFromTraversal");
             
             performanceMenasurement.Stop();
@@ -32,7 +32,12 @@ namespace DSAlgo
             //SetMatrixZero solution = new SetMatrixZero();
             //AddTwoNumbers2 solution = new AddTwoNumbers2();
             //ValidBST solution = new ValidBST();
-            MaxLengthOfNonRCChar solution = new MaxLengthOfNonRCChar();
+            //MaxLengthOfNonRCChar solution = new MaxLengthOfNonRCChar();
+            //CircularArrayPrint solution = new CircularArrayPrint();
+            //MaxSubArrayProb solution = new MaxSubArrayProb();
+            //RemoveDuplicateSortedArray solution = new RemoveDuplicateSortedArray();
+            //MergeKSortedListLL solution = new MergeKSortedListLL();
+            ReverseInteger solution = new ReverseInteger();
             solution.Run();
         }
 
