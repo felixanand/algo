@@ -37,7 +37,9 @@ namespace DSAlgo
             //MaxSubArrayProb solution = new MaxSubArrayProb();
             //RemoveDuplicateSortedArray solution = new RemoveDuplicateSortedArray();
             //MergeKSortedListLL solution = new MergeKSortedListLL();
-            ReverseInteger solution = new ReverseInteger();
+            //ReverseInteger solution = new ReverseInteger();
+            //KthSmallestBST solution = new KthSmallestBST();
+            PeakElement solution = new PeakElement();
             solution.Run();
         }
 
