@@ -39,7 +39,8 @@ namespace DSAlgo
             //MergeKSortedListLL solution = new MergeKSortedListLL();
             //ReverseInteger solution = new ReverseInteger();
             //KthSmallestBST solution = new KthSmallestBST();
-            PeakElement solution = new PeakElement();
+            //PeakElement solution = new PeakElement();
+            Fibonacci solution = new Fibonacci();
             solution.Run();
         }
 
