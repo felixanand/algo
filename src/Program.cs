@@ -16,7 +16,7 @@ namespace DSAlgo
             //DoOracleProblems();
             //LinkedListSingleImpl.Run();
             //ClassInitializer("BinaryTreeFromTraversal");
-            
+
             performanceMenasurement.Stop();
             Console.WriteLine("Time Taken = {0}ms", performanceMenasurement.ElapsedMilliseconds);
         }
@@ -40,7 +40,9 @@ namespace DSAlgo
             //ReverseInteger solution = new ReverseInteger();
             //KthSmallestBST solution = new KthSmallestBST();
             //PeakElement solution = new PeakElement();
-            Fibonacci solution = new Fibonacci();
+            //Fibonacci solution = new Fibonacci();
+            //ZigZag solution = new ZigZag();
+            RepeatedSubString solution = new RepeatedSubString();
             solution.Run();
         }
 
