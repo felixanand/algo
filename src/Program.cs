@@ -42,7 +42,9 @@ namespace DSAlgo
             //PeakElement solution = new PeakElement();
             //Fibonacci solution = new Fibonacci();
             //ZigZag solution = new ZigZag();
-            RepeatedSubString solution = new RepeatedSubString();
+            //RepeatedSubString solution = new RepeatedSubString();
+            //MaxSubArrayProb solution = new MaxSubArrayProb();
+            MergeIntervals solution = new MergeIntervals();
             solution.Run();
         }
 
