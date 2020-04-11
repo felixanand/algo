@@ -16,7 +16,7 @@ namespace DSAlgo
             //DoOracleProblems();
             //LinkedListSingleImpl.Run();
             //ClassInitializer("BinaryTreeFromTraversal");
-            
+
             performanceMenasurement.Stop();
             Console.WriteLine("Time Taken = {0}ms", performanceMenasurement.ElapsedMilliseconds);
         }
@@ -43,6 +43,10 @@ namespace DSAlgo
             //Fibonacci solution = new Fibonacci();
             //ArrayProductExceptSelf solution = new ArrayProductExceptSelf();
             MinHeapTest solution = new MinHeapTest();
+            //ZigZag solution = new ZigZag();
+            //RepeatedSubString solution = new RepeatedSubString();
+            //MaxSubArrayProb solution = new MaxSubArrayProb();
+            //MergeIntervals solution = new MergeIntervals();
             solution.Run();
         }
 
