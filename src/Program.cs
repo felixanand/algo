@@ -40,7 +40,9 @@ namespace DSAlgo
             //ReverseInteger solution = new ReverseInteger();
             //KthSmallestBST solution = new KthSmallestBST();
             //PeakElement solution = new PeakElement();
-            Fibonacci solution = new Fibonacci();
+            //Fibonacci solution = new Fibonacci();
+            //ArrayProductExceptSelf solution = new ArrayProductExceptSelf();
+            MinHeapTest solution = new MinHeapTest();
             solution.Run();
         }
 
