@@ -61,6 +61,6 @@ public class RepeatedSubString
         //     return true;
         // }
 
-        return false;
+        return foundAtleastOne;
     }
 }

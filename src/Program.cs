@@ -42,11 +42,13 @@ namespace DSAlgo
             //PeakElement solution = new PeakElement();
             //Fibonacci solution = new Fibonacci();
             //ArrayProductExceptSelf solution = new ArrayProductExceptSelf();
-            MinHeapTest solution = new MinHeapTest();
+            //MinHeapTest solution = new MinHeapTest();
             //ZigZag solution = new ZigZag();
             //RepeatedSubString solution = new RepeatedSubString();
             //MaxSubArrayProb solution = new MaxSubArrayProb();
             //MergeIntervals solution = new MergeIntervals();
+            //UGraphTest solution = new UGraphTest();
+            TrieCheck solution = new TrieCheck();
             solution.Run();
         }
 
