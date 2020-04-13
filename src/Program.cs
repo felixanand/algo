@@ -48,7 +48,9 @@ namespace DSAlgo
             //MaxSubArrayProb solution = new MaxSubArrayProb();
             //MergeIntervals solution = new MergeIntervals();
             //UGraphTest solution = new UGraphTest();
-            TrieCheck solution = new TrieCheck();
+            //TrieCheck solution = new TrieCheck();
+            //LongestWordInDictionary solution = new LongestWordInDictionary();
+            LongestCommonPrefixSoln solution = new LongestCommonPrefixSoln();
             solution.Run();
         }
 
