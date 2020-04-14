@@ -50,7 +50,8 @@ namespace DSAlgo
             //UGraphTest solution = new UGraphTest();
             //TrieCheck solution = new TrieCheck();
             //LongestWordInDictionary solution = new LongestWordInDictionary();
-            LongestCommonPrefixSoln solution = new LongestCommonPrefixSoln();
+            //LongestCommonPrefixSoln solution = new LongestCommonPrefixSoln();
+            LongestValidParan solution = new LongestValidParan();
             solution.Run();
         }
 
