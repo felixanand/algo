@@ -51,7 +51,8 @@ namespace DSAlgo
             //TrieCheck solution = new TrieCheck();
             //LongestWordInDictionary solution = new LongestWordInDictionary();
             //LongestCommonPrefixSoln solution = new LongestCommonPrefixSoln();
-            LongestValidParan solution = new LongestValidParan();
+            //LongestValidParan solution = new LongestValidParan();
+            CentsToChange solution = new CentsToChange();
             solution.Run();
         }
 
