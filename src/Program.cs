@@ -52,7 +52,9 @@ namespace DSAlgo
             //LongestWordInDictionary solution = new LongestWordInDictionary();
             //LongestCommonPrefixSoln solution = new LongestCommonPrefixSoln();
             //LongestValidParan solution = new LongestValidParan();
-            CentsToChange solution = new CentsToChange();
+            //CentsToChange solution = new CentsToChange();
+            //SearchInsertPosition solution = new SearchInsertPosition();
+            WordSearch solution = new WordSearch();
             solution.Run();
         }
 
