@@ -54,7 +54,8 @@ namespace DSAlgo
             //LongestValidParan solution = new LongestValidParan();
             //CentsToChange solution = new CentsToChange();
             //SearchInsertPosition solution = new SearchInsertPosition();
-            WordSearch solution = new WordSearch();
+            //WordSearch solution = new WordSearch();
+            WordSearch2 solution = new WordSearch2();
             solution.Run();
         }
 
