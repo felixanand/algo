@@ -12,13 +12,21 @@ namespace DSAlgo
             performanceMenasurement.Start();
 
             //DoAmazonProblems();
-            DoMicrosoftProblems();
+            //DoMicrosoftProblems();
             //DoOracleProblems();
             //LinkedListSingleImpl.Run();
             //ClassInitializer("BinaryTreeFromTraversal");
+            DoPostNewJobProblems();
 
             performanceMenasurement.Stop();
             Console.WriteLine("Time Taken = {0}ms", performanceMenasurement.ElapsedMilliseconds);
+        }
+
+        public static void DoPostNewJobProblems()
+        {
+            ReverseIntegers solution = new ReverseIntegers();
+            solution.Run();
+
         }
 
         public static void DoMicrosoftProblems()
