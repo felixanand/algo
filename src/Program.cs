@@ -24,8 +24,10 @@ namespace DSAlgo
 
         public static void DoPostNewJobProblems()
         {
-            ReverseIntegers solution = new ReverseIntegers();
+            //ReverseIntegers solution = new ReverseIntegers();
+            var solution = new ValidParenthesis();
             solution.Run();
+
 
         }
 

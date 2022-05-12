@@ -5,4 +5,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="src\Category\" />
+    <None Remove="src\Category\String\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\Category\" />
+    <Folder Include="src\Category\String\" />
+  </ItemGroup>
 </Project>
